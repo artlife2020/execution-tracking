@@ -148,4 +148,21 @@ def main():
         config.export()
     )
 
-    loggi
+    logging.info(
+        "Transaction recorded"
+    )
+
+    logging.info(
+        "Session completed"
+    )
+
+
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception as exc:
+        logging.error(
+            "Execution failed: %s",
+            exc
+        )
+```
